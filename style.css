@@ -239,6 +239,7 @@ color: blue;
 }
 .text-left.italic {
     font-style: italic;
+    font-size: 15px;
 }
 .text-center.edgeimage.firstbok img {
     max-width: 40%;
@@ -252,4 +253,9 @@ div#myDIV {
 }
 div#myDIV.active {
     display: block;
+}
+button.read-more {
+    color: blue;
+    background: none;
+    border: 0;
 }
