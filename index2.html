@@ -44,9 +44,10 @@
                 <br>
                 <br>
             </div>
-        <p class="text-left italic"><span class="c6">I was running Real Estate brokerage with my husband and we had lenders calling us every week asking for referral business. Even though we recommend our lenders to  our clients, buyers often want to use somebody they are familiar with already. They didn’t know the lender we are recommending to them and had no desire to pick up a phone to call. They wanted a quick online page to start the process.</span> </p>
+        <p class="text-left italic"><span class="c6">I was running Real Estate brokerage with my husband and we had lenders calling us every week asking for referral business. Even though we recommend our lenders to  our clients, buyers often want to use somebody they are familiar with already. They didn’t know the lender we are recommending to them and had no desire to pick up a phone to call. They wanted a quick online page to start the process.</span> <button onclick="myFunction()">Read More..</button></p>
 
-        <p class="text-left italic">We thought if our lenders can market to our clients and keep our client’s confidentiality, this would work really well! We wanted a way to have collaborate with partners so that we both could close more transactions!</p>
+        <div id="myDIV">
+            <p class="text-left italic">We thought if our lenders can market to our clients and keep our client’s confidentiality, this would work really well! We wanted a way to have collaborate with partners so that we both could close more transactions!</p>
 
         <p class="text-left">These days, I've managed to achieve quite a bit of success... I'm able to click a few buttons and get the phone to ring, I can also know that every month I’m going to get a batch of fresh deals, and I'm very lucky in that I can do it without logging into 5 different websites. It just works.</p>
 
@@ -119,6 +120,8 @@
                 Introducing...
             </strong>
         </p>
+          </div>
+        
         <h2>
             Our Top Agent co-Marketing Automation
 
@@ -666,7 +669,7 @@
                 font-size: 3em;
             }
             img {
-                width: 90%;
+                width: 60%;
                 /*height: 14%;*/
             }
         }
@@ -882,5 +885,15 @@
         (function() {
             $('.lazy').Lazy();
         })();
+
+        function myFunction() {
+            // var x = document.getElementById("myDIV");
+            // if (x.style.display !== "none") {
+            //     x.style.display = "block";
+            // } else {
+            //     x.style.display = "none";
+            // }
+            $("#myDIV").toggleClass("active");
+        }
     </script>
     </html>
